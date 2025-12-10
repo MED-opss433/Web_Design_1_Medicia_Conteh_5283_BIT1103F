@@ -8,5 +8,58 @@
 <img width="1598" height="1912" alt="ABOUT" src="https://github.com/user-attachments/assets/b79bb3e4-23f3-4a83-ad74-c6f2c483084a" />
 ![CONTACT 1](https://github.com/user-attachments/assets/9e3a92f6-26ae-4485-8eed-ce78b49fa9d7)
 <img width="1376" height="1954" alt="CONTACT" src="https://github.com/user-attachments/assets/7784c159-a922-4c16-9cd4-4eef2e193a1a" />
+# Football Agency Sierra Leone Website
+
+## Overview
+This project is the **Final Assignment (Assignment 3)** for the Web Design course at Limkokwing University.  
+It combines the wireframes (Assignment 1) and prototype (Assignment 2) into a fully functional, responsive website for **Football Agency Sierra Leone**.
+
+The website showcases Sierra Leonean football talent, upcoming matches, agency history, and provides contact information for inquiries.
+
+---
+
+## Features
+- **Home Page**: Hero banner, news updates, and highlights section.
+- **Players Page**: Player profiles with images, age, position, and stats.
+- **Matches Page**: Upcoming fixtures and recent results in responsive tables.
+- **About Us Page**: Agency history, vision, mission, and staff/team profiles.
+- **Contact Page**: Contact form with validation, address, phone, email, and WhatsApp link.
+- **Responsive Navigation**: Mobile-friendly menu toggle for smaller screens.
+- **Form Validation**: JavaScript ensures required fields are filled and email format is valid.
+
+---
+
+## Technologies Used
+- **HTML5** for structure
+- **CSS3** for styling and responsiveness
+- **JavaScript (ES6)** for interactivity (mobile menu + form validation)
+- **GitHub** for version control and submission
+
+---
+
+## Project Structure
+
+---
+
+## How to Run
+1. Clone or download this repository.
+2. Open `index.html` in any modern browser.
+3. Navigate using the menu to explore all pages.
+4. On mobile, use the ☰ Menu button to toggle navigation.
+5. Test the contact form — validation prevents empty or invalid submissions.
+
+---
+
+## Credits
+- Developed by **Med** (Limkokwing University, Semester 3).
+- Guided by course requirements for Web Design.
+- All content and layout created for academic purposes.
+
+---
+
+## License
+© 2023 Football Agency Sierra Leone. All rights reserved.  
+This project is for educational use only.
+
 
 
