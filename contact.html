@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Agency Sierra Leone - Contact</title>
+    <title>Contact - Football Agency Sierra Leone</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
                 <h1>FOOTBALL AGENCY SIERRA LEONE</h1>
             </div>
+
+            <button class="nav-toggle">☰ Menu</button>
+
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -25,111 +30,91 @@
         </div>
     </header>
 
-    <!-- Page Title Section -->
-    <section class="page-title">
-        <div class="container">
-            <h2>CONTACT US</h2>
-            <p>Get in touch with Football Agency Sierra Leone</p>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
+            <h2>CONTACT US</h2>
+            <p>Get in touch with Football Agency Sierra Leone</p>
+
             <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-container">
+
+                <!-- Left: Contact Form -->
+                <div class="contact-form-box">
                     <h3>Send us a Message</h3>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">NAME:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">EMAIL:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">MESSAGE:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">SEND</button>
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5" required></textarea>
+
+                        <button type="submit" class="send-button">SEND</button>
                     </form>
                 </div>
 
-                <!-- Contact Information -->
-                <div class="contact-info-container">
+                <!-- Right: Contact Details -->
+                <div class="contact-info-box">
                     <h3>Visit Us</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-text">
-                                <strong>ADDRESS:</strong>
-                                <p>52B LUMLEY ROAD<br>Freetown, Sierra Leone</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div class="contact-text">
-                                <strong>CALL:</strong>
-                                <p>+232-77-492-602</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-text">
-                                <strong>EMAIL:</strong>
-                                <p>Info@footballagencysierraleone.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">💬</div>
-                            <div class="contact-text">
-                                <strong>WHATSAPP:</strong>
-                                <p>Click the link below to join us on WhatsApp</p>
-                                <a href="http://www.footballagencysierraleone.com" class="whatsapp-link" target="_blank">
-                                    http://www.footballagencysierraleone.com
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <p><strong>Address:</strong><br>52B Lumley Road<br>Freetown, Sierra Leone</p>
+                    <p><strong>Call:</strong><br><a href="tel:+232-77-492-602">+232-77-492-602</a></p>
+                    <p><strong>Email:</strong><br><a href="mailto:footballagencysierraleone@gmail.com">footballagencysierraleone@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong><br><a href="https://wa.me/23277492602" target="_blank">Click here to join us on WhatsApp</a></p>
+
+                    <h3>Find Us</h3>
+                    <p>52B Lumley Road, Freetown<br>Sierra Leone</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h3>Find Us</h3>
-            <div class="map-placeholder">
-                <div class="map-content">
-                    <div class="map-icon">🗺️</div>
-                    <p>52B Lumley Road, Freetown</p>
-                    <p>Sierra Leone</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="contact-info">
-                <p>Email: <a href="mailto:Info@footballagencysierraleone.com">Info@footballagencysierraleone.com</a></p>
-                <p>Phone: <a href="tel:+232-77-492-602">+232-77-492-602</a></p>
+                <p>Email: 
+                    <a href="mailto:footballagencysierraleone@gmail.com">
+                        footballagencysierraleone@gmail.com
+                    </a>
+                </p>
+                <p>Phone: 
+                    <a href="tel:+232-77-492-602">
+                        +232-77-492-602
+                    </a>
+                </p>
             </div>
+
             <div class="copyright">
                 <p>&copy; 2023 Football Agency Sierra Leone. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+
+    <!-- WhatsApp Script -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const whatsappNumber = "23277492602";
+
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=` +
+                `Name: ${name}%0A` +
+                `Email: ${email}%0A` +
+                `Message: ${message}`;
+
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
+
 </body>
 </html>
